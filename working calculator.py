@@ -1,3 +1,11 @@
+# cd ~/cs50learning
+# git add .
+# git commit -m "what you did today"
+# git push
+
+
+
+
 
 #   revising a calculator
 
@@ -25,4 +33,4 @@ elif c == "/":
     else :
             print(division)
 else:
-    print("Operator not recognized!")
+    print(f"{c} not recognized!")
