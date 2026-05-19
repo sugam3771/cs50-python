@@ -88,6 +88,46 @@
 # #     c =int(input("Enter Deposit Amount: "))
 # #     print(f"{a} has been deposited in your account")
     
+balance = 10000
+
+while True:
+    print("\nChoose an option:")
+    print("deposit")
+    print("withdraw")
+    print("balance")
+    print("exit")
+
+    choice = input("Enter choice: ")
+
+    if choice == "deposit":
+        amount = int(input("Enter amount to deposit: "))
+        balance = balance + amount
+        print("New balance:", balance)
+
+    elif choice == "withdraw":
+        amount = int(input("Enter amount to withdraw: "))
+
+        if amount > balance:
+            print("Not enough balance!")
+
+        else:
+            balance = balance - amount
+            print("New balance:", balance)
+
+    elif choice == "balance":
+        print("Current balance:", balance)
+
+    elif choice == "exit":
+        print("Thank you for using ATM")
+        break
+
+else:
+    print("Invalid choice")
+
+
+
+
+
 # balance = 10000
 
 # while True:
@@ -110,44 +150,8 @@
 #         if amount > balance:
 #             print("Not enough balance!")
 
-#         else:
-#             balance = balance - amount
-#             print("New balance:", balance)
-
-#     elif choice == "balance":
-#         print("Current balance:", balance)
-
-#     elif choice == "exit":
-#         print("Thank you for using ATM")
-#         break
-
-#     else:
-#         print("Invalid choice")
 
 
-
-
-
-balance = 10000
-
-while True:
-    print("\nChoose an option:")
-    print("deposit")
-    print("withdraw")
-    print("balance")
-    print("exit")
-
-    choice = input("Enter choice: ")
-
-    if choice == "deposit":
-        amount = int(input("Enter amount to deposit: "))
-        balance = balance + amount
-        print("New balance:", balance)
-
-    elif choice == "withdraw":
-        amount = int(input("Enter amount to withdraw: "))
-
-        if amount > balance:
-            print("Not enough balance!")
+#     #the  above code is still half left because smth came up and i gotta continue in next day !!
 
         
