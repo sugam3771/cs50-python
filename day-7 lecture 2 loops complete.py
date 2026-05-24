@@ -136,24 +136,24 @@
 # main()
 
 
+# def main(): #horizontal
+#     print_row(4)
 
-def main(): #horizontal
-    print_row(4)
+# def print_row(breadth):
+#     print("?"*breadth)#   nahhh wtf how wtfff he jst did that like wtff lol
 
-def print_row(breadth):
-    print("?"*breadth)#   nahhh wtf how wtfff he jst did that like wtff lol
-
-
-main()
-
-
-
-
-# def main(): #horizontal and vertical both
-#     print_square(3)
-
-# def print_square(size):
-#     for i in range(size):
-#         print("#"*size)
 
 # main()
+
+
+
+
+
+def main(): #horizontal and vertical both
+    print_square(3)
+
+def print_square(size):
+    for i in range(size):
+        print("#"*size)
+
+main()
